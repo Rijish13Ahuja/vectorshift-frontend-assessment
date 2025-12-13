@@ -3,7 +3,7 @@ import { Handle, Position, ReactFlow, useReactFlow } from 'reactflow';
 import BaseNode from './BaseNode';
 import 'reactflow/dist/style.css';
 
-const DelayNode = ({ id, data }) => {
+export const DelayNode = ({ id, data }) => {
     const [seconds, setSeconds] = useState(data?.seconds ?? 1);
 
     return (

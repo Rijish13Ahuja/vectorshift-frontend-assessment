@@ -27,7 +27,6 @@ export default function BaseNode({ id, title, handles = [], body, styleOverrides
                 e.currentTarget.style.boxShadow = `0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px ${gradientColors[0]}20`;
             }}
         >
-            {/* Animated gradient border on top */}
             <div style={{
                 position: 'absolute',
                 top: 0,
@@ -38,7 +37,6 @@ export default function BaseNode({ id, title, handles = [], body, styleOverrides
                 opacity: 0.8
             }} />
 
-            {/* Glowing orb indicator */}
             <div style={{
                 position: 'absolute',
                 top: '-40px',
@@ -51,7 +49,6 @@ export default function BaseNode({ id, title, handles = [], body, styleOverrides
                 pointerEvents: 'none'
             }} />
 
-            {/* Title with animated dot */}
             <div style={{
                 fontWeight: 600,
                 fontSize: '14px',
@@ -74,7 +71,6 @@ export default function BaseNode({ id, title, handles = [], body, styleOverrides
                 {title}
             </div>
 
-            {/* Body content */}
             <div style={{
                 color: '#cbd5e1',
                 fontSize: '13px',
@@ -84,7 +80,6 @@ export default function BaseNode({ id, title, handles = [], body, styleOverrides
                 {body}
             </div>
 
-            {/* Connection handles with glow effect */}
             {handles.map((h, i) => (
                 <Handle
                     key={i}

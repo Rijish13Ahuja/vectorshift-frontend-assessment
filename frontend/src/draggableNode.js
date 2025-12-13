@@ -1,7 +1,6 @@
 // draggableNode.js
 
 export const DraggableNode = ({ type, label }) => {
-  // Map node types (lowercase) to their gradient colors
   const getGradientForType = (nodeType) => {
     const gradientMap = {
       'input': ['#10b981', '#059669'],
@@ -67,7 +66,6 @@ export const DraggableNode = ({ type, label }) => {
       }}
       draggable
     >
-      {/* Shine effect overlay */}
       <div style={{
         position: 'absolute',
         top: 0,
